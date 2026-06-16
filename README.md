@@ -1,16 +1,19 @@
-## Hi there 👋
+# Hey, I'm Dicey 👋
 
-<!--
-**Neontoshi/Neontoshi** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I build things with Rust and TypeScript from cross-platform desktop apps
+to full-stack e-commerce platforms.
 
-Here are some ideas to get you started:
+## What I'm working on
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- **Kyma** — a cross-platform music player built with Tauri + Rust.
+  Custom audio pipeline using Symphonia and CPAL, YouTube/SoundCloud streaming via yt-dlp.
+- **Shopcore** — an e-commerce backend in Rust/Axum with Stripe, crypto payments,
+  role-based auth, and shipment tracking.
+
+## Stack
+
+Rust · TypeScript · React · Tauri · Axum · Python · PostgreSQL
+
+## Find me
+
+[www.linkedin.com/in/daisi-samuel](#) · [kidblip1@gmail.com](#) ·
