@@ -9,10 +9,17 @@ to full-stack e-commerce platforms.
   Custom audio pipeline using Symphonia and CPAL, YouTube/SoundCloud streaming via yt-dlp.
 - **Shopcore** — an e-commerce backend in Rust/Axum with Stripe, crypto payments,
   role-based auth, and shipment tracking.
+- **Emailer Agent** - an automatic emailer thats send emails based on the preference given
 
 ## Stack
 
-Rust · TypeScript · React · Tauri · Axum · Python · PostgreSQL
+Rust · 
+TypeScript · 
+React · 
+Tauri ·
+Axum · 
+Python ·
+PostgreSQL
 
 ## Find me
 
