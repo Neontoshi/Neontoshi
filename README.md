@@ -1,4 +1,4 @@
-# Hey, I'm Dicey 👋
+# Hey, I'm Neon 👋
 
 I build things with Rust and TypeScript from cross-platform desktop apps
 to full-stack e-commerce platforms.
