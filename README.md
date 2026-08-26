@@ -6,7 +6,7 @@ I'm a full-stack developer who lives at the intersection of **Rust**, **TypeScri
 
 ---
 
-## 🧠 What I'm Building Right Now
+## What I'm Building Right Now
 
 ### 🎵 [Kyma](https://github.com/neontoshi/Kyma)
 **Cross-platform music player with a custom audio pipeline**
@@ -15,17 +15,17 @@ I'm a full-stack developer who lives at the intersection of **Rust**, **TypeScri
 - **Audio Engine:** Symphonia (decoding) + CPAL (playback) full control over the audio pipeline
 - **Streaming:** YouTube/SoundCloud integration via `yt-dlp`
 - **Why it matters:** Most music players are wrappers around webviews. Kyma is native audio, end-to-end.
-- **Status:** Active development
+- **Status:** Stable
 
 ### 🛍️ [Shopcore](https://github.com/neontoshi/shopcore)
 **E-commerce backend with Rust/Axum — built for scale**
 
 - **Stack:** Rust, Axum, PostgreSQL, Redis
-- **Payments:** Stripe + crypto (BTC, ETH, SOL) via Solana Pay
+- **Payments:** Stripe + crypto (BTC, ETH, SOL)
 - **Auth:** Role-based access control (RBAC) with JWT
 - **Features:** Shipment tracking, inventory management, order lifecycle
 - **Why it matters:** Most e-commerce backends are Node.js/Python. Shopcore is Rust faster, safer, cheaper to run.
-- **Status:** MVP live, adding multi-tenant support
+- **Status:** MVP ready, adding multi-tenant support
 
 ### 📬 [Huggmailer](https://github.com/neontoshi/huggmailer)
 **Automated email dispatcher based on user preferences**
@@ -33,7 +33,7 @@ I'm a full-stack developer who lives at the intersection of **Rust**, **TypeScri
 - **Stack:** Rust, SMTP
 - **Features:** Preference-based targeting, Cold Email Pipeline with AI assistance for Generating Emails, Top Notch Email Template Designs.
 - **Why it matters:** Email automation without the bloat. Lightweight, configurable, Rust-native.
-- **Status:** Stable
+- **Status:** Production Ready
 
 ### 🎲 [Provable-Fairness-Engine](https://github.com/neontoshi/provable-fairness-engine)
 **A provably fair selection system on Solana**
@@ -60,7 +60,7 @@ I'm a full-stack developer who lives at the intersection of **Rust**, **TypeScri
 
 ---
 
-## 🛠️ The Stack
+## My Stack
 
 | Layer | Technologies |
 |-------|--------------|
@@ -74,7 +74,7 @@ I'm a full-stack developer who lives at the intersection of **Rust**, **TypeScri
 
 ---
 
-## 📫 Find Me
+## You can also find me here
 
 - **LinkedIn:** [daisi-samuel](https://www.linkedin.com/in/daisi-samuel)
 - **Email:** [kidblip1@gmail.com](mailto:kidblip1@gmail.com)
