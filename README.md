@@ -64,7 +64,7 @@ I'm a full-stack developer who lives at the intersection of **Rust**, **TypeScri
 
 | Layer | Technologies |
 |-------|--------------|
-| **Languages** | Rust, TypeScript, Python |
+| **Languages** | Rust, TypeScript, Python, QT |
 | **Frontend** | React, Tauri, Ratatui (TUI) |
 | **Backend** | Axum, Actix, Tokio |
 | **Databases** | PostgreSQL, Redis, SQLite |
