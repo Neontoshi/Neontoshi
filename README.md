@@ -1,8 +1,8 @@
 # Hey, I'm Neon 👋
 
-> **"I build things that push boundaries from cross-platform apps to blockchain-powered fairness engines."**
+> **"I build things that push boundaries from cross-platform apps and blockchain-powered fairness engines, to CLI powerhouse tools."**
 
-I'm a full-stack developer who lives at the intersection of **Rust**, **TypeScript**, and **systems engineering**. I build software that's fast, correct, and a little bit unconventional from music players with custom audio pipelines to provably fair systems on Solana.
+I'm a full-stack developer working at the intersection of **Rust**, **TypeScript**, and **systems engineering**. I build software that's fast, correct, and a little unconventional from music players with custom audio pipelines to provably fair systems on Solana.
 
 ---
 
@@ -10,53 +10,48 @@ I'm a full-stack developer who lives at the intersection of **Rust**, **TypeScri
 
 ### 🎵 [Kyma](https://github.com/neontoshi/Kyma)
 **Cross-platform music player with a custom audio pipeline**
-
 - **Stack:** Tauri, Rust, TypeScript, React
-- **Audio Engine:** Symphonia (decoding) + CPAL (playback) full control over the audio pipeline
-- **Streaming:** YouTube/SoundCloud integration via `yt-dlp`
+- **Audio Engine:** Symphonia (decoding) + CPAL (playback) - full control over the audio pipeline, down to a custom `HttpReader` with real HTTP range-request seeking
+- **Streaming:** YouTube/SoundCloud playback with automatic stream-URL re-resolution as CDN links expire, TTL-based caching shared across both sources
+- **Visuals:** Butterchurn visualizer with preset sync and freeze-on-pause behavior
 - **Why it matters:** Most music players are wrappers around webviews. Kyma is native audio, end-to-end.
-- **Status:** Stable
+- **Status:** Actively developed across multiple builds; core playback pipeline stable
 
 ### 🛍️ [Shopcore](https://github.com/neontoshi/shopcore)
-**E-commerce backend with Rust/Axum — built for scale**
-
-- **Stack:** Rust, Axum, PostgreSQL, Redis
-- **Payments:** Stripe + crypto (BTC, ETH, SOL)
-- **Auth:** Role-based access control (RBAC) with JWT
-- **Features:** Shipment tracking, inventory management, order lifecycle
-- **Why it matters:** Most e-commerce backends are Node.js/Python. Shopcore is Rust faster, safer, cheaper to run.
-- **Status:** MVP ready, adding multi-tenant support
+**E-commerce backend with Rust/Axum - built for scale**
+- **Stack:** Rust, Axum, PostgreSQL (SQLx), Redis, TypeScript/Vite frontend
+- **Payments:** Stripe (with HMAC-verified webhooks) plus crypto payments via NOWPayments
+- **Auth:** Role-based access control with a proper `UserRole` type instead of raw strings, Redis-backed sessions
+- **Features:** Full storefront + admin dashboard, cart, checkout, address management, order lifecycle
+- **Why it matters:** Most e-commerce backends are Node.js/Python. Shopcore is built with Rust. faster, safer, cheaper to run.
+- **Status:** MVP ready, multi-tenant support in progress
 
 ### 📬 [Huggmailer](https://github.com/neontoshi/huggmailer)
-**Automated email dispatcher based on user preferences**
-
-- **Stack:** Rust, SMTP
-- **Features:** Preference-based targeting, Cold Email Pipeline with AI assistance for Generating Emails, Top Notch Email Template Designs.
-- **Why it matters:** Email automation without the bloat. Lightweight, configurable, Rust-native.
-- **Status:** Production Ready
+**Automated job-application email pipeline as a desktop app**
+- **Stack:** Tauri, Rust, TypeScript/React
+- **Features:** Multi-provider AI email generation (OpenAI, Groq, Gemini, DeepSeek, Grok), custom-designed PDF cover letters and email templates, JWT + API-key auth, Redis-backed rate limiting
+- **Why it matters:** Email automation without the bloat. Lightweight, configurable, Rust-native, and it auto-provisions its own headless browser at build time.
+- **Status:** Production ready
 
 ### 🎲 [Provable-Fairness-Engine](https://github.com/neontoshi/provable-fairness-engine)
 **A provably fair selection system on Solana**
-
-- **Stack:** Rust, Solana, Anchor
-- **The Problem:** How do you run a fair raffle/selection where even the organizer can't cheat?
-- **The Solution:** Blockchain-based randomness the outcome is determined on-chain, verifiable by anyone.
+- **Stack:** Rust, Solana, Anchor, Axum, PostgreSQL
+- **The Problem:** How do you run a fair raffle/giveaway where even the organizer can't cheat?
+- **The Solution:** Commit-reveal randomness sourced from on-chain `SlotHashes` and hashed with keccak — the outcome is derived on-chain and independently verifiable, not chosen by anyone.
 - **Why it matters:** Trustless systems are the future. No central authority, no manipulation.
-- **Status:** Prototype complete, adding on-chain verification UI
+- **Status:** Deployed to devnet, on-chain verification UI in progress
 
 ### 🔍 [Code-Intelligence](https://github.com/neontoshi/code-intelligence)
 **Multi-language static analysis for dead code, duplicate detection, and call graphs**
-
 - **Stack:** Rust, Tree-sitter, ML (logistic regression), LLM integration
 - **Languages:** Rust, Python, TypeScript/JS, Go, Java, Dart, PHP, C++, C# (10+ languages)
 - **Features:**
-  - Dead code detection with 95%+ accuracy (ML + graph reachability)
+  - Dead code detection via ML + graph reachability over a `petgraph` call graph
   - Structural duplicate detection (MinHash + LSH + ML pair classification)
-  - Interactive call graph visualization (D3.js)
-  - LLM-powered code summaries (Ollama, OpenAI, Anthropic)
-  - Terminal dashboard (Ratatui)
-- **Why it matters:** Most static analysis tools are language-specific. Code-Intelligence is polyglot, ML-powered, and fast.
-- **Status:** Production-ready. Used in CI/CD pipelines.
+  - Interactive Graphviz call-graph visualization
+  - LLM-powered code summaries (Ollama, OpenAI, and Anthropic support in progress)
+- **Why it matters:** Most static analysis tools are language-specific. Code-Intelligence is polyglot and fast.
+- **Status:** Actively developed core analysis pipeline works end-to-end on real multi-language codebases; hardening test coverage and edge cases
 
 ---
 
@@ -64,25 +59,23 @@ I'm a full-stack developer who lives at the intersection of **Rust**, **TypeScri
 
 | Layer | Technologies |
 |-------|--------------|
-| **Languages** | Rust, TypeScript, Python, QT |
-| **Frontend** | React, Tauri, Ratatui (TUI) |
-| **Backend** | Axum, Actix, Tokio |
+| **Languages** | Rust, TypeScript, Python |
+| **Frontend** | React, Tauri |
+| **Backend** | Axum, Tokio |
 | **Databases** | PostgreSQL, Redis, SQLite |
 | **Blockchain** | Solana, Anchor |
-| **ML/Analysis** | Tree-sitter, Petgraph, Linfa, Bincode |
 | **Tooling** | Cargo, pnpm, Docker, GitHub Actions |
 
 ---
 
-## You can also find me here
-
+## Find Me Here
+- **GitHub:** [neontoshi](https://github.com/neontoshi)
 - **LinkedIn:** [daisi-samuel](https://www.linkedin.com/in/daisi-samuel)
 - **Email:** [kidblip1@gmail.com](mailto:kidblip1@gmail.com)
-- **GitHub:** [neontoshi](https://github.com/neontoshi)
 
 ---
 
-## 🧠 Philosophy
+## Philosophy
 
 > "Code is not just instructions, it's a system. I build systems that are fast, correct, and fair."
 
