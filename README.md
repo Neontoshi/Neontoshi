@@ -33,6 +33,14 @@ I'm a full-stack developer working at the intersection of **Rust**, **TypeScript
 - **Why it matters:** Email automation without the bloat. Lightweight, configurable, Rust-native, and it auto-provisions its own headless browser at build time.
 - **Status:** Production ready
 
+### 💬 [NeonWhat](https://github.com/Neontoshi/neon-wha)
+**A native Linux desktop client for WhatsApp, in about 5 MB**
+- **Stack:** Tauri 2, Rust, WebKitGTK
+- **Native Integration:** OS notifications routed from WhatsApp Web's browser notifications, a system tray icon with a live unread badge, close-to-tray, and a global `Ctrl+Shift+W` show/hide shortcut
+- **Under the Hood:** Injected JS bridges notifications and tracks unread counts from the page title, a Chrome user-agent spoof keeps WhatsApp Web working on WebKitGTK, and custom CSS themes load from a local config folder
+- **Why it matters:** There's no official WhatsApp app for Linux, and most wrappers ship a full Chromium. NeonWhat uses the system webview, so it stays tiny.
+- **Status:** Actively developed
+
 ### 🎲 [Provable-Fairness-Engine](https://github.com/neontoshi/provable-fairness-engine)
 **A provably fair selection system on Solana**
 - **Stack:** Rust, Solana, Anchor, Axum, PostgreSQL
